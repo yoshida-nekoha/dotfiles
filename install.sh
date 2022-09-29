@@ -10,7 +10,7 @@ fi
 
 if [ "$REMOTE_CONTAINERS" == "true" ]; then
     echo 'REMOTE_CONTAINERS, skip copy .gitconfig'
-elif [ -e $currentDir/home/.gitconfig ]; then
+elif [ -e ~/.gitconfig ]; then
     echo 'exists, skip copy .gitconfig'
 else
     ln -s $currentDir/home/.gitconfig ~/ ;

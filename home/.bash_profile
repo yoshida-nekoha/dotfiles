@@ -15,6 +15,8 @@ alias gui='sudo systemctl isolate graphical.target'
 # docker
 alias dps='docker ps --format "{{.Names}}\t\t{{.Status}}\t\t{{.Ports}}"'
 
+#
+export FIREBASE_TOKEN=1//0eYl0aIJAWZepCgYIARAAGA4SNwF-L9IrQh8R0ztjgzuhlIzWho7wXHyfp2z2B-admIndR6x-Fc0x77Lwybzl2KpdwqPxEOhHKEM
 
 # bitto.jp
 alias redis='docker exec -it manga-checker_devcontainer_redis_1 redis-cli'
