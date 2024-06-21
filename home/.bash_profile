@@ -124,4 +124,3 @@ alias ubuntu='ssh -i id_ubuntu tomo@192.168.11.160'
 # python
 alias python='python3'
 
-PATH=`yarn global bin`:$PATH
