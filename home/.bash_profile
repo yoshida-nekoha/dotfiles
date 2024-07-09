@@ -30,6 +30,7 @@ alias psql='docker exec -it manga-checker_devcontainer_postgres_1 /usr/bin/psql'
 
 # git
 alias st='git status'
+alias commit='git commit -m'
 alias glog="git log --no-merges --date=local --pretty='format:%C(yellow)%h %C(green)%cd %C(yellow)%an%C(red)%d %C(reset)%s' $1"
 alias glatest="glog -20"
 alias tagfind='git tag --list|grep $1'
