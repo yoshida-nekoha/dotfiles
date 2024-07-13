@@ -5,6 +5,9 @@ if [ -e ~/.bash_profile ];then
     echo '.bash_profile exists.'
 else
     ln -s $currentDir/home/.bash_profile ~/
+    if [ -e ~/.bash_aliases ];then
+        rm ~/.bash_aliases
+    fi
     ln -s $currentDir/home/.bash_profile ~/.bash_aliases
     source ~/.bash_profile
 fi
