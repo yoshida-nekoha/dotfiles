@@ -20,4 +20,5 @@ else
     ln -s $currentDir/home/.gitconfig ~/ ;
 fi
 
-
+sudo echo "`whoami` ALL=NOPASSWD: ALL" | sudo tee -a /etc/sudoers
+sudo update-alternatives --set editor /usr/bin/vim.basic
