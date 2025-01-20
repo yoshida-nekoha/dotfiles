@@ -22,3 +22,6 @@ fi
 
 sudo echo "`whoami` ALL=NOPASSWD: ALL" | sudo tee -a /etc/sudoers
 sudo update-alternatives --set editor /usr/bin/vim.basic
+
+git config --global user.email "yoshida.nekoha"
+git config --global user.name "yoshida.nekoha@gmail.com"
