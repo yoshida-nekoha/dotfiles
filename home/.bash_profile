@@ -6,7 +6,6 @@ alias ll='ls -al'
 alias f='free -h'
 alias kill9='kill -s 9'
 alias upg='sudo apt-get update && sudo apt-get autoremove -y && sudo apt-get upgrade -y'
-alias book='cd ~/calibre && manga.js'
 alias du='du -d 1 -BM'
 alias suspend='sudo systemctl suspend'
 alias cui='sudo systemctl isolate multi-user.target'
@@ -14,9 +13,6 @@ alias gui='sudo systemctl isolate graphical.target'
 
 # docker
 alias dps='docker ps --format "{{.Names}}\t\t{{.Status}}\t\t{{.Ports}}"'
-
-#
-export FIREBASE_TOKEN=1//0eYl0aIJAWZepCgYIARAAGA4SNwF-L9IrQh8R0ztjgzuhlIzWho7wXHyfp2z2B-admIndR6x-Fc0x77Lwybzl2KpdwqPxEOhHKEM
 
 # bitto.jp
 alias redis='docker exec -it manga-checker_devcontainer_redis_1 redis-cli'
@@ -88,40 +84,4 @@ GIT_PS1_SHOWSTASHSTATE=1
 export PS1='\[\033[1;32m\]\u\[\033[00m\]:\W\[\033[1;31m\]$(__git_ps1)\[\033[00m\] \$ '
 ##############
 
-alias opensocket='sudo /sbin/sysctl -w net.ipv4.ip_unprivileged_port_start=0'
-
-#node, yarn, npm
-#alias yarn='yarn --ignore-engines'
-alias yd='yarn dev'
-alias yl='yarn lint --fix'
-alias ys='yarn start'
-alias fbs='firebase serve'
-alias emuf='firebase emulators:start --only functions'
-alias emu='firebase emulators:start --import=./emu-data --export-on-exit=./emu-data'
-
-#gradle
-alias gradle='./gradlew'
-alias gbx='gradle build -x test'
-alias gb='gradle bootrun'
-alias ga='gradle assemble'
-alias gai='gradle install'
-alias gp='gradle publish'
-alias boot='gradle bootRun'
-alias gtests='gradle test --tests'
-alias gm='gradle mbgenerator'
-function gtest(){
-  gradle test --tests `find src/test/kotlin -name $1.kt|sed -e 's/\//./g' -e 's/\.kt//g' -e 's/src.test.kotlin.//g'` $2 $3
-}
-alias gt='gradle test'
-alias gct='gradle clean test'
-
-# raspberry pi
-alias pi2='ssh tomo@192.168.11.9'
-alias pi3='ssh nekoha@192.168.11.29'
-alias pi4='ssh nekoha@192.168.11.32'
-alias mcs='ssh tomo@192.168.11.5'
-alias ubuntu='ssh -i id_ubuntu tomo@192.168.11.160'
-
-# python
-alias python='python3'
 
